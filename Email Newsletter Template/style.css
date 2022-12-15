@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    background-image: url(./img/watches.png), 
+    linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.715));
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 300px;
+    padding: 5px;
+}
+
+.header-text{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.name{
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+main{
+    display: block;
+    padding: 20px;
+}
+
+.intro{
+    display: block;
+}
+
+.mother-service{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.services img{
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+}
+
+.services p{
+    padding: 10px;
+    margin: 20px;
+}
+
+.items{
+    display: flex;
+}
+
+.services a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(18, 18, 232, 0.594);
+    border-radius: 50px 50px;
+    background-color: rgba(18, 18, 232, 0.813);;
+    padding: 10px;
+}
+
+.footer{
+    background-color: rgba(0, 0, 255, 0.769);
+    height: 100px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgba(65, 65, 203, 0.929);
+    border: 1px solid white;
+    border-radius: 50px 50px;
+    background-color: white;
+    padding: 10px;
+    font-size: larger; 
+}
