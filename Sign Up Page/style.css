@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    padding: 0;
+    width: 50%;
+    margin: 150px auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: pink;
+    color: rgba(49, 45, 45, 0.922);
+}
+
+.wrapper{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;  
+}
+
+.textarea{
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.555);
+    border-radius: 50px 50px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid rgba(232, 3, 64, 0.756);
+    border-radius: 50px 50px;
+    font-size: 20px;
+    background-color: rgb(232, 3, 64, 0.756);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(255, 3, 70);
+    color: white;
+}
+
+.reset{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 10px;
+}
+
+.reset a{
+    color: rgba(232, 3, 64, 0.756);
+    text-decoration: none;
+}
+
+.reset a:hover{
+    color: rgb(255, 3, 70);
+}
+
+.signup{
+    border-bottom: 1px solid;
+    margin: 10px;
+}
+
+.signup p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.signup a{
+    color: rgba(232, 3, 64, 0.756);
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.signup a:hover{
+    color: rgb(255, 3, 70);
+}
+
+.alt p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: rgba(49, 45, 45, 0.922);
+    border: 2px solid rgba(0, 0, 0, 0.555);
+    border-radius: 50px 50px;
+    font-size: 30px;
+}
+
+.links a:hover{
+    background-color: rgba(225, 222, 222, 0.9);
+}
+
+.links img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+
