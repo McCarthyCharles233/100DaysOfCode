@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper"><!-- page wrapper -->
+        <!-- header -->
+        <div class="heading">
+            <p>Survey Form</p>
+        </div>
+        <div  class="form">
+            <!-- personal information name, email, DOB, Gender -->
+            <div class="info">
+                <label for="">Name <span>*</span></label><br>
+                <input  type="text" ><br><br>
+
+                <label for="">Email <span>*</span></label><br>
+                <input type="email" ><br>
+            </div>
+            <div class="dob">
+                <label for="">Date of Birth <span>*</span></label><br><br>
+                <input type="date"><br>
+            </div>
+            <div class="sex">
+                <label for="">Sex <span>*</span></label><br><br>
+                <input type="radio" name="gender" value="Male">
+                <label for="male" id="Male">Male</label>
+                <input type="radio" name="gender" value="Female">
+                <label for="female" id="female">Female</label>
+                <input type="radio" name="gender" value="Other">
+                <label for="Other" id="other">Other</label><br>
+             </div>
+             <!-- professional experience select option -->
+             <div class="work">
+                <label for="occupation">Occupation <span>*</span></label><br><br>
+                <select>
+                    <option value="">Student</option>
+                    <option value="">Unemployed</option>
+                    <option value="">Employed</option>
+                    <option value="">Self Employed</option>
+                </select><br>
+             </div>
+             <!-- secondary information (interests)  -->
+             <div class="checkbox">
+                <label for="">Courses you are interested in? <span>*</span></label><br><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Frontend Development</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Cloud Computing</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Software Engineering</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">Product Management</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="">UI/UX Design</label><br>
+             </div>
+             <!-- textarea input -->
+             <div class="aim">
+                <label for="">What is your end goal for this program?</label><br><br>
+                <textarea name="" id="" cols="40" rows="10"></textarea>
+             </div>
+             <!-- save and submit buttons -->
+             <div class="submit">
+                <button class="btn" type="submit">Save</button>
+                <button class="btn" type="submit">Submit</button>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
