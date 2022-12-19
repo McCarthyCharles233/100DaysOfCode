@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+body{
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    font-family: 'Chivo Mono', monospace;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+.wrapper{
+    padding: 10px;
+    background: #536976;
+    background-color: whitesmoke;
+    margin: 30px;
+
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(74, 74, 74);
+    border-width: 70%;
+    /* border-bottom: 2px solid gray; */
+    
+}
+
+.info, .dob, .sex, .work, .checkbox, .aim, .submit{
+    padding: 5px;
+    margin: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.info input{
+    width: 80%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(52, 51, 51, 0.822);
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+.dob input{
+    width: 80%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(52, 51, 51, 0.822);
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+.work select{
+    width: 80%;
+    font-size: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(52, 51, 51, 0.822);
+    background-color: whitesmoke;
+}
+
+.aim textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(52, 51, 51, 0.822);
+    background-color: whitesmoke;
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    font-size: larger;
+    color: whitesmoke;
+    background-color: rgba(2, 48, 86, 0.516);
+    border: 1px solid rgba(2, 48, 86, 0.516);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+span{
+    color: red;
+}
