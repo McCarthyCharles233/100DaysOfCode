@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+    width: 60%;
+    margin: auto;
+    background-color: rgba(100, 148, 237, 0.247);
+}
+
+.wrapper{
+    margin: 100px auto;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: auto;
+    grid-gap: 0;
+    border: inherit;
+    padding: 20px;
+}
+
+.first{
+    background-color: aliceblue;
+}
+
+.join{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(0, 0, 73, 0.811);
+}
+
+.duration{
+    font-size: larger;
+    color: rgba(4, 68, 142, 0.774);
+}
+
+.grant{
+    font-size: larger;
+    color: rgba(56, 55, 55, 0.858);
+}
+
+ .second{
+    background-color: rgba(4, 4, 110, 0.559);
+}
+
+.sub-type{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(240, 255, 255, 0.792);
+}
+
+.fee{
+    font-size: 50px;
+    color: rgba(240, 255, 255, 0.792);
+}
+
+.fee span{
+    font-size: medium;
+}
+
+.access{
+    font-size: larger;
+    color: rgba(240, 255, 255, 0.792);
+}
+
+a{
+    text-decoration: none;
+    color: rgba(56, 55, 55, 0.858);
+    font-size: larger;
+    border: 2px solid rgb(207, 224, 240);
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(207, 224, 240);
+}
+
+a:hover{
+    background-color: rgba(207, 207, 241, 0.667);
+    border: 2px solid rgba(207, 207, 241, 0.667);
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.third{
+     background-color: rgba(164, 164, 212, 0.568);
+     color: rgba(0, 0, 0, 0.632);
+}
+
+.why-us{
+    font-size: larger;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.bottom{
+    display: flex;
+}
+
+.second, .third{
+    width: 100%;
+}
+
