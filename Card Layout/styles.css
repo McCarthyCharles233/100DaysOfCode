@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: whitesmoke;
+}
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+} 
+
+.text-1{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.929);
+}
+
+.text-2{
+    font-size: 30px;
+    color: rgba(4, 4, 101, 0.911);
+}
+
+.text-3{
+    color: rgba(128, 128, 128, 0.975);
+}
+
+.topic{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.about{
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    margin-left: 70%;
+    width: 5vw;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card-1, .card-4{
+     width: 250px;
+     height: 200px;
+     padding: 10px;
+     margin: 10px;
+     margin-top: 125px;
+}
+
+.card-2, .card-3{
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;  
+}
+
+.card-1{
+    border-radius: 5px;
+    border-top: 5px solid rgba(0, 242, 255, 0.715);
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.267);
+    cursor: pointer;
+}
+
+.card-2{
+    border-radius: 5px;
+    border-top: 5px solid rgba(227, 16, 16, 0.769);
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.267);
+    cursor: pointer;
+}
+
+.card-3{
+    border-radius: 5px;
+    border-top: 5px solid rgba(255, 196, 0, 0.712);
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.267);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card-4{
+    border-radius: 5px;
+    border-top: 5px solid rgba(0, 42, 255, 0.703);
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.267);
+    cursor: pointer;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover{
+    box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.541);
+}
