@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about, .store, .gmail, .images, .sign-in{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.sign-in{
+    border: 2px solid rgba(105, 105, 239, 0.434);
+    background-color: rgba(0, 0, 255, 0.598);
+    border-radius: 2px;
+}
+
+
+img{
+    width: 400px;
+    margin: 10px;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btns a{
+    text-decoration: none;
+    border: 2px solid rgba(128, 128, 128, 0.009);
+    color: black;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgba(128, 128, 128, 0.397);
+    border-radius: 5px;
+}
+
+.search-bar{
+    width: 500px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+main{
+    margin-top: 10%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 10%;
+}
+
+.footer-left, .footer-right{
+    margin: 10px; 
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
