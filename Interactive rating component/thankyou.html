@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image">
+            <img src="./img/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="score">
+            <p>You selected</p>
+        </div>
+        <div class="thank-you">
+            <h2>Thank you!</h2>
+            <p>We appreciate you taking time out and giving a rating.
+                If you ever need nore support, don't hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    function sendRating(rating) {
+        // Get the div element with class "score"
+        var scoreDiv = document.querySelector(".score");
+        // Get the <p> element inside the div
+        var scoreP = scoreDiv.querySelector("p");
+        // Update the text of the <p> element
+        scoreP.innerText = "You selected " + rating + " out of 5";
+    }
+    var rating = localStorage.getItem("rating");
+    sendRating(rating);
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="star">
+            <img src="./img/icon-star.svg" alt="">
+        </div>
+        <div class="rate-us">
+            <h2>How did we do?</h2>
+            <p>Please let us know how we did with your support request.
+                All feedback is appreciated to help us improve our service
+            </p>
+        </div>
+        <form id="rating-form">
+            <div class="numbers">
+                <label>
+                    <input onclick="sendRating(1)" type="radio" name="rating" value="1">
+                    1
+                  </label>
+                  <label>
+                    <input onclick="sendRating(2)" type="radio" name="rating" value="2">
+                    2
+                  </label>
+                  <label>
+                    <input onclick="sendRating(3)" type="radio" name="rating" value="3">
+                    3
+                  </label>
+                  <label>
+                    <input onclick="sendRating(4)" type="radio" name="rating" value="4">
+                    4
+                  </label>
+                  <label>
+                    <input onclick="sendRating(5)" type="radio" name="rating" value="5">
+                    5
+                  </label><br>
+                  <button onclick="submitSelection()" id="submit" type="submit">Submit</button>
+            </div>
+        </form>    
+    </div>
+</body>
+<script>
+    const labels = document.querySelectorAll("label");
+    for (const label of labels) {
+        label.addEventListener("click", function () {
+            for (const l of labels) {
+                l.classList.remove("selected")
+            }
+            this.classList.add("selected");
+        });
+    }
+
+    const form = document.getElementById("rating-form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();  // To prevent the form from submitting to the server
+        var rating = getSelectedRating();  // get the selected rating from form
+        localStorage.setItem("rating", rating);
+        window.location.href = "thankyou.html";
+    });
+
+    function getSelectedRating(){
+    let selectedRating;
+    const radioButtons = document.querySelectorAll("input[type=radio]");
+    radioButtons.forEach(function(button){
+        if(button.checked){
+            selectedRating = button.value;
+        }
+    });
+    return selectedRating;
+}
+
+</script>
+</html>
