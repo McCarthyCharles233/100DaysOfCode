@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+}
+
+.body{
+    background-color: rgba(10, 2, 23, 0.879);
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+  
+.svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #fff;
+}
+  
+.svg-icon circle {
+    stroke: #fff;
+    stroke-width: 1;
+}
+
+aside{
+    padding: 20px;
+    width: 30%;
+    border: 2px solid rgb(91, 91, 243);
+    height: 100vh;
+    background-color: rgb(91, 91, 243);
+}
+
+.logo{
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 50px;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+menu{
+    padding: 10px;
+}
+
+menu li{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid rgb(91, 91, 243);;
+    border-radius: 20px;
+    font-size: larger;
+    color: #fff;
+    cursor: pointer;
+}
+
+menu li:hover{
+    background-color: rgba(3, 3, 255, 0.135);
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    height: fit-content;
+    border: 2px solid rgb(91, 91, 243);
+    border-radius: 50px;
+    background-color: rgb(91, 91, 243);
+}
+
+.aside-class {
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+}
+.show {
+    transform: translateX(0);
+}
+
+#close{
+    display: none;
+}
+
+#open {
+    position: absolute;
+    left: 10px;
+}
+
+#change-theme{
+    position: absolute;
+    top: 85%;
+    border: 2px solid rgb(91, 91, 243);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#change-theme:hover{
+    background-color: rgba(3, 3, 255, 0.135);
+}
